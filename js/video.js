@@ -10,10 +10,9 @@ document.querySelector("#play").addEventListener("click", function() {
 		document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
 });
 
-document.querySelector("#pause").addEventListener("click", function()) {
+document.querySelector("#pause").addEventListener("click", function() {
 		console.log("Pause Video")
 		video.pause();
-		document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
@@ -28,13 +27,13 @@ document.querySelector("#orig").addEventListener("click", function() {
 
 document.querySelector("#slower").addEventListener("click", function() {
 		console.log("Slow Down")
-		video.playbackRate *=.95;
+		video.playbackRate *= .95;
 		console.log(video.playbackRate);
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
 		console.log("Speed Up")
-		video.playbackRate /=.95;
+		video.playbackRate /= .95;
 		console.log(video.playbackRate);
 });
 
@@ -70,7 +69,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 			document.getElementById("mute").innerHTML = "Unmute";
 			video.muted = true;
 		}
-});
+}); 
 
 
 
